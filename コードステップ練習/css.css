@@ -50,35 +50,74 @@ li {
 .mainvisual img{
   height: 600px;
   width: 100%;
- margin-bottom: 60px;
+ margin-bottom: 80px;
  object-fit: cover;
 }
 
 .aboutsec{
-  height: 300px;
-  width: 960px;
+  height:200px;
+  max-width: 960px;
   text-align: center;
-  margin: auto;
+  justify-content: center;
+  margin: 0 auto 100px auto;
 }
 
-.about{
-  height: 210px;
-  width: 840px;
-  display: flex;
-  align-items: center;
-
-}
 
 .h2{
-  margin-bottom: 60px;
+  margin-bottom: 70px;
+  display: inline-block;
+  border-bottom:1px solid;
+  border-color: black;
+  width:75px;
+  padding-bottom: 1px;
+  font-size: 24px;
+  }
+      
+
+.aboutbox{
+  height:120px ;
+  width: 550px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
+
+
 .aboutimg{
   border-radius: 50%;
   height: 100px;
+  justify-content: left;
+  margin-left: 10px;
+
+  margin-bottom: 50px;
+ 
+}
+.aboutwapper2{
+  height: 110px;
+  width: 310px;
+  margin:0 0 15px 20px;
+  text-align:  left;
+  font-size: 10.8px;
   
 }
-.aboutwapper{
-  height: 220px;
-  width: 400px;
-  margin: auto;
+
+.h3{
+  font-size: 12px;
+  margin-bottom: 10px;
+  
+}
+.aboutwapper2 .a{
+  font-size: 10px;
+
+}
+
+
+.bicyclesec{
+  height: 300px;
+  max-width: 960px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto 100px auto;
 }
