@@ -14,17 +14,19 @@
     width: auto;
     position: absolute;
     top: 50px;
-    left: 106px;
+    left: 36px;
     
 }
 
 ul {
     display: flex;
     list-style: none;
-    
-    width:440px ;
+    margin: 5px 50px 0px 48px; 
+    width:540px ;
     height: 27px;
+    font-size: 14px;
     justify-content: space-between;
+   
   }
 
 
@@ -37,12 +39,9 @@ ul {
 }
 .nav{
     height:27px ;
-    width: 440px;
-   
-   margin-left: 510px;
-   display: flex;
+    display: flex;
    display: inline-block;
-    float: right;
+ 
 }
 
 .mainimg{
@@ -60,6 +59,7 @@ ul {
 .titleimgbox{
     width: 270px;
     display: inline-block;
+   
 }
 
 
