@@ -23,7 +23,8 @@
   height: 60px;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0.4%;
+  padding: 5px;
+ 
 }
 
 .logo{
@@ -64,7 +65,7 @@ li {
 
 
 .h2{
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   display: inline-block;
   border-bottom:1px solid;
   border-color: black;
@@ -105,7 +106,7 @@ li {
 
 .h3{
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   
 }
 .aboutwapper2 .a{
@@ -114,10 +115,29 @@ li {
 }
 
 
-.bicyclesec{
-  height: 300px;
+#bicyclesec{
+  height: 600px;
   max-width: 960px;
   text-align: center;
   justify-content: center;
+  align-items: center;
   margin: 0 auto 100px auto;
+  padding: 30px;
 }
+
+.bicul{  
+  max-width: 960px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+
+.bicli{
+   max-width: 32%;
+}
+ .bimg{
+  width: 280px;
+  height: auto;
+ }
