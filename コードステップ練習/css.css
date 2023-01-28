@@ -16,22 +16,33 @@
     align-items: center;
     text-align: center;
     margin-left: 100px;
-   margin-right: 60px;
+    margin-right: 60px;
   
   }
 #headerinner{
   height: 60px;
   max-width: 960px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 0 60px 0 60px;
  
+}
+.abli {
+  list-style: none;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  font-size: 10.8px;
 }
 
 .logo{
-  margin: 10px 0px 10px 50px;
+  
+ padding:  10px 0px 10px 0px;
   text-align: left;
   display: inline-block;
   width: 120px;
+  height: 60px;
+    background-color: rgb(28, 81, 188);
 }
 
 
@@ -92,13 +103,12 @@ nav ul{
   height: 100px;
   justify-content: left;
 
-  margin-bottom: 10px;
  
 }
 .aboutwapper2{
   height: 90px;
   width: 310px;
-  margin:25px 0 15px 30px;
+  margin:25px 0 15px 28px;
   text-align:  left;
   font-size: 10.8px;
   
@@ -113,7 +123,10 @@ nav ul{
   font-size: 10px;
 
 }
-
+.h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 #bicyclesec{
   
