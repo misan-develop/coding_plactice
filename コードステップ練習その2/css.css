@@ -6,4 +6,22 @@
 * {
   box-sizing: border-box;
 }
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
 
+.header{
+    margin-top: 60px;
+    
+}
+
+.header .h1{
+    margin-bottom: 15px;
+
+}
+.mainvisual{
+max-width: 100%;
+
+}
