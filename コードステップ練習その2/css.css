@@ -7,17 +7,21 @@
 * {
   box-sizing: border-box;
 }
+*{ background-color: rgb(191, 255, 255);
+  
+}
 
 
 .container{
   max-width: 1000px;
   margin: 0 auto;
-
+  background-color: f4f9ff;
+  background-color: rgb(191, 255, 255);
 }
 
 .header{
     margin-top: 50px;
-    
+    background-color: rgb(255, 255, 255);
 }
 
 .header .h1{
@@ -39,7 +43,7 @@
 
   margin: 0 auto;
   margin-bottom: 60px;
-  
+  background-color: rgb(255, 255, 255);
 }
 
 .indexinner{
@@ -49,25 +53,34 @@
 .indexinner h2{
   margin-bottom: 10px;
   text-align: left;
+  margin-top: 90px;
+  font-size: 13.5px;
 }
 
 .indexinner ol{
 text-align: left;
-margin-left: 20px;
+
 }
 
 .indexinner li{
   margin-left: 20px;
   margin-bottom: 20px;
+  font-size: 10.5px;
 }
 
 .detail{
-
+  background-color: rgb(255, 255, 255);
   margin-bottom: 100px;
+ 
 }
-
+.detail h2{
+   margin-bottom: 10px;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 13.5px;
+}
 .detailinner{
-    max-width: 600px;
+   width: 600px;
      display: flex;
      text-align: center;
      justify-content: center;
@@ -82,5 +95,14 @@ margin-left: 20px;
  margin-bottom: 10px;
 }
 .detailbox dl{
+  display: flex;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+font-size: 10.5px;
+margin-bottom: 25px;
+height: 150px;
+}
+.detail dt dd{
+  width: 70px;
   display: flex;
 }
