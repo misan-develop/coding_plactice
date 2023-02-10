@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+*{margin: 0;
+  padding: 0;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  width: 1000px;
+  margin:50px auto 0;
+}
+.header h1{
+  font-size: 22px;
+
+margin-bottom: 10px;
+
+  
+}
+
+.mainvisual{
+width: 1000px;
+margin: 0 auto 50px;
+}
+
+
+.index{
+  width: 800px;
+  height: 400px;
+  margin: 55px auto;
+  padding: 20px;
+  background-color: cadetblue;
+}
+
+.indexinner{
+border:solid 1px black;
+padding: 30px 40px;
+}
+.indextitle{
+  font-size: 14px;
+  margin: 45px auto 30px;
+  text-align: center;
+}
+
+.indexlist{
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.indexlist li{
+margin-bottom: 20px;
+font-size: 10.5px;
+
+}
