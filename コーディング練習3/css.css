@@ -7,7 +7,9 @@
 * {
   box-sizing: border-box;
 }
-
+img{
+  max-width: 100%;
+}
 .header{
   width: 1000px;
   margin:50px auto 0;
@@ -38,7 +40,9 @@ margin: 0 auto 50px;
 
 .indexinner{
 border:solid 1px black;
-padding: 30px 40px;
+padding: 30px;
+width: 600px;
+
 }
 .indextitle{
   font-size: 14px;
@@ -50,9 +54,82 @@ padding: 30px 40px;
   text-align: center;
   justify-content: center;
   margin: 0 auto;
+  width: 500px;
 }
 .indexlist li{
 margin-bottom: 20px;
 font-size: 10.5px;
+width: 400px;
+}
 
+.list{
+  width: 800px;
+  display: flex;
+  margin: 55px auto;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  justify-content: space-between;
+}
+.list li{
+  width: 49%;
+  margin-bottom: 10px;
+ list-style: none;
+}
+
+
+.detail{
+  width: 800px;
+  padding: 60px;
+  text-align: center;
+  margin: 0 auto;
+  margin: 60px auto;
+
+  background-color: rgb(175, 148, 201);
+}
+.detailh2{
+ 
+  font-size: 14.5px;
+ margin-bottom: 30px;
+  text-align: center;
+}
+
+
+
+.detaillist{
+
+  width: 100%;
+  display: flex;
+  text-align: left;
+  font-size: 10.5px;
+
+
+}
+
+.detaillist dl{
+  width: 35%;
+  border-right: solid 1px   black;
+  flex-wrap: wrap;
+
+  margin-bottom: 10px;
+
+  text-align: left;
+}
+
+.detaillist dl dt{
+  width: 35%;
+display: flex;
+}
+.detaillist dl dd{
+
+  margin-bottom: 10px;
+}
+.detaillist2{
+ width: 65%;
+text-align: left;
+margin-left:  40px;
+}
+
+.detaillist2 p{
+  margin-bottom: 20px;
+  font-size: 10.5px;
 }
