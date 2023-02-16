@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+*{margin: 0;
+  padding: 0;  
+}
+
+* {
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+}
+
+.header{
+  height: 270px;
+  width: 800px;
+  margin: 0px auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.header h1{
+  font-size: 28px;
+}
+.navnav{
+ justify-content: right;
+}
+.nav{
+  display: flex;
+ 
+}
+.nav img{
+  height: 20px;
+}
+.nav li{
+  margin: 0 15px;
+  list-style: none;
+  font-size: 12px;
+  
+}
+
+.works{
+  height: 600px;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 15px;
+  text-align: center;
+}
+.works h2{
+  margin: 60px;
+}
+.worklist{
+  list-style: none;
+  display: flex;
+flex-wrap: wrap;
+}
+
+.worklist li{
+  width: 33%;
+}
+.worklist img{
+  max-width: 270px;
+  margin: 10px;
+}
+
+.news{
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  
+}
+.news h2{
+  margin: 60px auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.newsbox{
+  width: 820px;
+  height: 250px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsbox dt {
+  text-align: left;
+  font-size: 10px;
+  border-top: solid 1px black;
+  width: 20%;
+ padding: 15px;
+
+
+}
+.newsbox dd{
+  text-align:left;
+  font-size: 10px;
+  border-top: solid 1px black;
+  width: 79%;
+  padding:15px;
+}
