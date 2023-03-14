@@ -14,8 +14,9 @@
 <body>
 
 <header class="header">
-
-        <h1 class="h1">Travel Blog</h1>
+        <div class="title">
+            <h1 class="h1">Travel Blog</h1>
+        </div>
             <nav class="nav">
                 <ul class="headerul">
                     <li><a href="http://">NEW</a></li>
@@ -26,29 +27,32 @@
                 </ul>
             </nav>
 </header>
+
+
 <div class="pickup">
-    <article>
-        <img src="" alt="">
+    <div  class="pickupart">
+        <article>
+            <img src="public/src/pickup1.jpg" alt="">
+            <h2>テキストテキストテキスト
+                タイトルテキストテキストテキストテキストテキストテキストテキスト
+            </h2>
+            <div class="pickuplink"><a href="">READ MORE</a></div>
+        </article>
+  </div>
+  <article class="pickupart">
+        <img src="public/src/pickup2.jpg" alt="">
         <h2>テキストテキストテキスト
             タイトルテキストテキストテキストテキストテキストテキストテキスト
            </h2>
-         <a href="">READ MORE</a>
-    </article>
-   
-    <article>
-        <img src="" alt="">
-        <h2>テキストテキストテキスト
-            タイトルテキストテキストテキストテキストテキストテキストテキスト
-           </h2>
-         <a href="">READ MORE</a>
+           <div class="pickuplink"><a href="">READ MORE</a></div>
     </article>
 
-    <article>
-        <img src="" alt="">
+    <article class="pickupart">
+        <img src="public/src/pickup3.jpg" alt="">
         <h2>テキストテキストテキスト
             タイトルテキストテキストテキストテキストテキストテキストテキスト
            </h2>
-         <a href="">READ MORE</a>
+           <div class="pickuplink"><a href="">READ MORE</a></div>
     </article>
    
 </div>
@@ -56,7 +60,8 @@
 
 
 <div class="container">
-    <main>
+ <div class="inner">
+    <main class="main">
         <article>
             <h2> テキストテキストテキスト
                 </h2>
@@ -66,7 +71,7 @@
                 <li>カテゴリ1
                   
             </ul>
-            <img src="" alt="">
+            <img src="public/src/main1.jpg" alt="">
             <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             READ MORE
         </article>
@@ -80,7 +85,7 @@
                 <li>カテゴリ1
                   
             </ul>
-            <img src="" alt="">
+            <img src="public/src/main2.jpg" alt="">
             <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             READ MORE
         </article>
@@ -93,7 +98,7 @@
                 <li>カテゴリ1
                   
             </ul>
-            <img src="" alt="">
+            <img src="public/src/main3.jpg" alt="">
             
             <p>本文テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             READ MORE
@@ -112,13 +117,14 @@
             READ MORE
         </article>
     </main>
-    <aside>
-        <section class="author">
 
-           <h3>namename</h3>
-           <p>タイトルテキストテキストテキストテキストテキストテキスト
-            テキストテキストテキスト</p>
-        </section>
+       <aside class="aside">
+            <section class="author">
+
+            <h3>namename</h3>
+            <p>タイトルテキストテキストテキストテキストテキストテキスト
+                テキストテキストテキスト</p>
+            </section>
             <section class="ranking">
                   <h3>Ranking</h3>
                   <article>
@@ -136,21 +142,19 @@
                     <img src="" alt="">
                       テキストテキストテキスト
                       タイトルテキストテキストテキストテキストテキストテキスト
-                      <h4></h4>
-          
-                  </article>
+                      <h4></h4> 
+               </article>
           </section>
 
           <section class="ranking">
             <h3>Ranking</h3>
-            <article>
-                <img src="" alt="">
-                  テキストテキストテキスト
-                  タイトルテキストテキストテキストテキストテキストテキスト
-                  <h4></h4>
-      
-              </article>
-      </section>
+                <article>
+                    <img src="" alt="">
+                    テキストテキストテキスト
+                    タイトルテキストテキストテキストテキストテキストテキスト
+                    <h4></h4>
+                </article>
+          </section>
 
 
    
@@ -165,9 +169,9 @@
                     <li> XXXX年XX月(XX)</li>
                 </ul>
             </section>
-    </aside>
-</div>
-
+        </aside>
+    </div>
+ </div>
 
     <footer class="footer"> 
     <div class="content">
