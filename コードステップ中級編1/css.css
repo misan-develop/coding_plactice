@@ -8,8 +8,14 @@
 }
 img {
   max-width: 100%;
-}
 
+}
+img {
+  border-style: none;}
+main .text {
+  padding: 10px 40px 30px 40px;
+  font-size: 11px;
+}
 li {
   list-style: none;
 }
@@ -31,7 +37,7 @@ width: 100%;
 }
 
 .h1{
-  padding: 17px 16px;
+  padding: 16px 0;
   font-size: 26px;
   
 }
@@ -58,23 +64,24 @@ list-style: none;
 }
 
 .pickup{
-  width: 1200px;
+
   margin: 0 auto ;
 display: flex;
 justify-content: space-between;
 padding: 150px 0 0 0;
-margin-bottom: 100px;
+margin-bottom: 75px;
 }
 .pickupart{
   display: inline-block;
-  width: 31%;
-  margin: 0 10px;
+  width: 32%;}
+  
+ 
 
-}
 
 .pickupart h2{
   font-size: 12px;
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 .pickuplink{
   font-size: 10px;
@@ -84,8 +91,28 @@ margin-bottom: 100px;
 }
 .main{
   width: 65%;
-}
 
+}
+.main article{
+  margin-bottom: 80px;
+}
+.main article h2{
+  margin-bottom: 15px;
+}
+.main  article ul{
+  display: flex;
+}
+.main article li{
+  margin-right: 20px;
+  margin-bottom: 8px;
+  font-size: 7px;
+}
+.readmore{
+  font-size: 10px;
+  justify-content: center;
+  text-align: center;
+  
+}
  .container{
   
   display: flex;
