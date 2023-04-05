@@ -69,7 +69,7 @@ list-style: none;
 display: flex;
 justify-content: space-between;
 padding: 150px 0 0 0;
-margin-bottom: 75px;
+margin-bottom: 70px;
 }
 .pickupart{
   display: inline-block;
@@ -117,10 +117,71 @@ margin-bottom: 75px;
   
   display: flex;
   justify-content:space-between;
-
+margin-bottom: 220px;
   }
 .aside{
-  width: 30%;
-margin: 20px auto;
-padding: 30px;
+  width: 33%;
+
+padding: 20px;
+
 }
+
+.img{
+  width: 300px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.img img{
+  width: 130px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+.name{
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.pro{
+  width: 390px;
+  padding: 15px 30px 60px 10px;
+  font-size: 11px;
+}
+.ranking{
+ margin-bottom: 60px;
+
+}
+.ranking img{
+  margin-top: 25px;
+  max-width: 350px;
+
+}
+.ranking h3{
+  text-align: center;
+  font-size: 12px;
+}
+.ranking h4{
+  font-size: 9px;
+}
+
+.archive{
+  width: 380px;
+ padding-right: 30px;
+
+}
+.archive h3{
+  font-size: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.archive li{
+  border-top: solid 1px black;
+  text-align: left;
+  padding: 20px;
+ font-size: 9px;
+}
+
+.archive ul{
+  border-bottom: solid 1px black;
+}
+
