@@ -185,3 +185,20 @@ padding: 20px;
   border-bottom: solid 1px black;
 }
 
+.footer{
+  background-color: #f7f7f7;
+
+}
+.content{
+  
+  display: flex;
+
+
+  justify-content: space-between;
+padding: 50px 0;
+
+}
+.item{
+  
+  width: 30%;
+}
