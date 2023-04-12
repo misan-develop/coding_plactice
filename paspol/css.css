@@ -8,134 +8,47 @@
 * {
     box-sizing: border-box;
 }
+li{   
+    list-style:none;}
+ul{
+    padding-left:0}
+.img{
+    width:100%}
 
 .header{
-    height: 122px;
-    width: auto;
-    position: absolute;
-    top: 50px;
-    left: 36px;
-    
+    height: 700px;
+    display: flex;
+   
+    justify-content: space-between;
+background-color: blanchedalmond;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    margin: 5px 50px 0px 48px; 
-    width:540px ;
-    height: 27px;
-    font-size: 14px;
-    justify-content: space-between;
-   
-  }
 
+.headerimg{
+height: 100px;
+width: 300px;
+background-color: aqua;
+margin-left:110px ;
+margin-top: 50px
 
-.ul li{   
-    
-    display: inline-block;
-    list-style: none;
-   
-    
+}
+.headerimg  img{
+    height: 70px;
 }
 .nav{
-    height:27px ;
-    display: flex;
-   display: inline-block;
- 
-}
-
-.mainimg{
-    height: 654px;
-
-    background-color: rgb(141, 141, 55);
-   
-}
-
-.titleimg{
-    height:auto;
-    width: 270px;
-    float: left;
-   }
-.titleimgbox{
-    width: 270px;
-    display: inline-block;
-   
-}
-
-
-.tabi1{
-    height: 600px;
-    width:400px;
-    margin: 110px 300px 200px 522px;
-    text-align: left;
-}
-.tabi-inner{
-    height: auto;
-    width: 500px;
-    margin: 30px;
-    font-size: 20px;
-}
-
-
-
-
-
-.tabi2{
-    height: 500px;
-    width: 800px;
-  margin: 100px 315px 100px 310px;
+  height: 300px;
+  width: 800px;
+ margin: 0 auto;
 
 }
-.tabi2box{
-    height: 100px;
-    
-    margin-top: 20px;
+
+.navul li{
+display: inline-block;
+
+}
+.navul{
+    margin-top: 70px;
+    margin-left: 300px;
     display: flex;
     justify-content: space-between;
-}
-
-.tabi2-inner1{
-   height: 50px;
-   width: 100px; 
-   margin: 50px;
-   display: inline-block;
-   font-size: 16px;
-}
-.tabi2-inner2{
-    height: 50px;
-    width: 100px;
-    margin: 50px;
-  
-   
-}
-
-
-.productbox{
-    height: 1050px;
-    width: 800px;
-    margin: 20px 5px 20px 20px;
-    display: flex;
-   flex-wrap: wrap;
-
-}
-.pro-inner1{
-    height:400px;
-    width: 220px;
-    margin: 23px;
-    display: inline-block;
-}
-.pro-inner2{
-    height: 340px;
-    width: 230px;
-    margin-bottom: 10px;
-
-}
-
-.pro-inner3{
-    height: 90px;
-    width: 180px;
-}
-.pro-innerimg{
-    height: 330px;
-    width: 240px;
 }
