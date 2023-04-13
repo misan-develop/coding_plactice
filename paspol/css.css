@@ -63,12 +63,12 @@ font-size: 14px;
     justify-content: space-between;
 }
 .tabibox{
-    height:1000px;
-    padding-top:50px;
+    height:920px;
+    
     padding-left: 100px;
     margin-bottom: 50px;
     font-size: 20px;
-    background-color: blanchedalmond;
+    background-color: rgb(147, 135, 116);
 }
 .tabi1{
     width: 480px;
@@ -76,15 +76,54 @@ font-size: 14px;
 }
 .tabiinner{
     width: 400px;
-  margin-top: 40px;
+padding-top: 40px;
 }
 
 .tabiinner h2{
     font-size: 44px;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 70px;
 }
 .tabi1 img{
     height: 55px;
 padding-left: 70px;
+}
+
+.inner{
+    width: 810px;
+    margin: 0 auto;
+}
+.tabi2{
+    margin-top:115px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.morebottom P{
+    font-size: 20px;
+}
+.product-title{
+       height: 50px;
+  
+    font-size: 20px;
+    
+   
+}
+
+.product-title img{
+    height: 10px;
+    display: inline-block;
+}
+
+.product{
+    height: 400px;
+    width: 1000px;
+    display: flex;
+}
+.product-img img{
+    height: 350px;
+
+    margin-left: 10px;
+
 }
