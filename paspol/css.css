@@ -63,12 +63,12 @@ font-size: 14px;
     justify-content: space-between;
 }
 .tabibox{
-    height:920px;
+    height:900px;
     
     padding-left: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 20px;
-    background-color: rgb(147, 135, 116);
+    background-color: rgb(214, 213, 210);
 }
 .tabi1{
     width: 480px;
@@ -76,13 +76,15 @@ font-size: 14px;
 }
 .tabiinner{
     width: 400px;
-padding-top: 40px;
+padding-top: 30px;
+
 }
 
 .tabiinner h2{
-    font-size: 44px;
+    font-size: 46px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 85px;
+    margin-bottom: 20px;
 }
 .tabi1 img{
     height: 55px;
@@ -90,15 +92,18 @@ padding-left: 70px;
 }
 
 .inner{
-    width: 810px;
+    width: 800px;
+    padding: 0 3px;
     margin: 0 auto;
+   
 }
 .tabi2{
-    margin-top:115px;
+    margin-top:100px;
+    margin-right: 5px ;
     height: 100px;
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 .morebottom P{
     font-size: 20px;
@@ -106,24 +111,91 @@ padding-left: 70px;
 .product-title{
        height: 50px;
   
-    font-size: 20px;
+  padding-bottom: 10px;
+    font-size: 12px;
     
    
 }
 
 .product-title img{
-    height: 10px;
+    height: 8px;
     display: inline-block;
 }
 
 .product{
-    height: 400px;
-    width: 1000px;
+    height: 450px;
+    
     display: flex;
 }
-.product-img img{
-    height: 350px;
 
-    margin-left: 10px;
+.productbox{
+    height: 450px;
+    margin-bottom: 100px;
+}
+.product-img img{
+    width: 240px;
+padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
 
 }
+.producttxt{
+    font-size: 20px;
+    width: 250px;
+    padding: 20px 5px 35px 40px;
+    margin-bottom:  40px;
+}
+
+
+    
+
+
+
+.tabi3{
+    margin-top:100px;
+    margin-right: 5px ;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post-title{
+       height: 50px;
+  
+  padding-bottom: 10px;
+    font-size: 20px;
+    
+   
+}
+
+.post-title img{
+    height: 8px;
+    display: inline-block;
+}
+
+.post{
+    height: 850px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.postbox{
+    height: 350px;
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+.post-img img{
+    width: 300px;
+padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+.posttxt{
+    font-size: 14px;
+    width: 500px;
+    padding: 20px 5px 35px 40px;
+    margin-bottom:  40px;}
