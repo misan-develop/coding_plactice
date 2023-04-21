@@ -109,10 +109,10 @@ padding-left: 70px;
     font-size: 20px;
 }
 .product-title{
-       height: 50px;
+    height: 50px;
   
   padding-bottom: 10px;
-    font-size: 12px;
+    font-size: 20px;
     
    
 }
@@ -124,13 +124,14 @@ padding-left: 70px;
 
 .product{
     height: 450px;
-    
+
     display: flex;
 }
 
 .productbox{
     height: 450px;
-    margin-bottom: 100px;
+    margin-top: 40px;
+    margin-bottom: 130px;
 }
 .product-img img{
     width: 240px;
@@ -148,7 +149,11 @@ padding-top: 20px;
 
 
     
-
+.tabi3box{
+    
+    height: 150px;
+    background-color: bisque;
+}
 
 
 .tabi3{
@@ -158,11 +163,12 @@ padding-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .post-title{
        height: 50px;
-  
+
   padding-bottom: 10px;
     font-size: 20px;
     
@@ -182,20 +188,31 @@ padding-top: 20px;
 }
 
 .postbox{
-    height: 350px;
+    
     display: flex;
+ 
     margin-bottom: 30px;
     
 }
 .post-img img{
-    width: 300px;
+    width: 340px;
 padding-top: 20px;
-    margin-left: 20px;
+    
     margin-right: 10px;
 
 }
+.posttxt h2{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 .posttxt{
-    font-size: 14px;
-    width: 500px;
-    padding: 20px 5px 35px 40px;
-    margin-bottom:  40px;}
+    font-size: 13px;
+  
+    margin-left: 20px;
+    margin-bottom:  40px;
+}
+.posttxt-1{
+    margin-top: 10px;
+
+}
