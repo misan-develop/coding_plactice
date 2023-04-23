@@ -179,9 +179,12 @@ padding-top: 20px;
     height: 8px;
     display: inline-block;
 }
-
+.postinner{
+    height: auto;
+    margin-bottom: 30px;
+}
 .post{
-    height: 850px;
+   margin: 0 auto;
     margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -189,13 +192,18 @@ padding-top: 20px;
 
 .postbox{
     
+    margin: 0 auto;
     display: flex;
  
     margin-bottom: 30px;
     
 }
+.post-img {
+ width:40%;
+ margin: 0 auto;
+}
 .post-img img{
-    width: 340px;
+    width: 100%;
 padding-top: 20px;
     
     margin-right: 10px;
@@ -207,12 +215,89 @@ padding-top: 20px;
     margin-bottom: 10px;
 }
 .posttxt{
+    width: 55%;
     font-size: 13px;
-  
+   margin: 0 auto;
     margin-left: 20px;
     margin-bottom:  40px;
 }
 .posttxt-1{
-    margin-top: 10px;
+    margin-top: 20px;
 
+}
+
+.share{
+    height: 50px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bottombox{
+
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sharebottom1{
+    height: 50px;
+    width: 160px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: solid 1px blue;
+    border-left: solid 1px blue;
+    border-right: solid 1px blue;
+    border-bottom: solid 1px blue;
+}.sharebottom2{
+    height: 50px;
+    width: 160px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: solid 1px blue;
+    border-left: solid 1px blue;
+    border-right: solid 1px blue;
+    border-bottom: solid 1px blue;
+}.sharebottom3{
+    height: 50px;
+    width: 160px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: solid 1px blue;
+    border-left: solid 1px blue;
+    border-right: solid 1px blue;
+    border-bottom: solid 1px blue;
+}
+
+.undernav{
+    width: 500px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 50px;
+  
+}
+
+.footer{
+
+    height: 150px;
+    margin: 0 auto;
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+}
+
+.footerimg{
+
+ width: 90px;
+}
+.footerimg img{
+    width: 90px;
+}
+.footertxt{
+text-decoration: rgb(0, 0, 0);
+font-size: 8px;
 }
