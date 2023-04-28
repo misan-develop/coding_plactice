@@ -97,23 +97,48 @@ padding-left: 70px;
     margin: 0 auto;
    
 }
+.tabi2box{
+    height: 1200px;
+  
+}
 .tabi2{
-    margin-top:100px;
-    margin-right: 5px ;
+    width: 800px;
+    margin-top:110px;
+   
+    margin-bottom: 10px;
     height: 100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  
 }
 .morebottom P{
-    font-size: 20px;
+    font-size: 22px;
+    height: 60px;
+}
+a.btn_01 {
+	display: block;
+	text-align: center;
+	
+	text-decoration: none;
+	width: 160px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	transition: 0.5s;
+}
+a.btn_01:hover {
+	color: #fff;
+	background: #27acd9;
 }
 .product-title{
     height: 50px;
   
   padding-bottom: 10px;
     font-size: 20px;
-    
+ 
    
 }
 
@@ -123,15 +148,17 @@ padding-left: 70px;
 }
 
 .product{
-    height: 450px;
+    height: 480px;
 
     display: flex;
 }
 
 .productbox{
     height: 450px;
-    margin-top: 40px;
-    margin-bottom: 130px;
+    margin-top: 20px;
+   
+    margin-bottom:  40px;
+
 }
 .product-img img{
     width: 240px;
@@ -144,33 +171,46 @@ padding-top: 20px;
     font-size: 20px;
     width: 250px;
     padding: 20px 5px 35px 40px;
-    margin-bottom:  40px;
+    
 }
 
 
     
 .tabi3box{
-    
-    height: 150px;
-    background-color: bisque;
+    margin: 0 auto;
+
+    background-color: rgb(205, 205, 205);
 }
-
-
-.tabi3{
-    margin-top:100px;
+   
+.morebottom2{
+    width: 150px;
     margin-right: 5px ;
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    
-}
+    flex-wrap: wrap;}
+
+  .navspace{
+    height: 90px;
+  }
+.tabi3{
+width: 820px;
+height: 150px;
+display: flex;
+margin: 0 auto;
+height: 100px;
+flex-wrap: wrap;
+justify-content: space-between;}
+
+
+
 
 .post-title{
        height: 50px;
 
   padding-bottom: 10px;
     font-size: 20px;
+    
     
    
 }
@@ -185,7 +225,7 @@ padding-top: 20px;
 }
 .post{
    margin: 0 auto;
-    margin-bottom: 40px;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -195,7 +235,7 @@ padding-top: 20px;
     margin: 0 auto;
     display: flex;
  
-    margin-bottom: 30px;
+    margin-top: 30px;
     
 }
 .post-img {
@@ -205,7 +245,7 @@ padding-top: 20px;
 .post-img img{
     width: 100%;
 padding-top: 20px;
-    
+    display: inline-block;
     margin-right: 10px;
 
 }
@@ -226,19 +266,27 @@ padding-top: 20px;
 
 }
 
+
+.backtop{
+    height: 40px;
+    text-align: center;
+    justify-content:end;
+    background-color:rgb(205, 205, 205);
+}
 .share{
-    height: 50px;
+    height: 60px;
     width: 500px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
+    justify-content:space-between;
+
+    align-items: center;
 }
 
 .bottombox{
-
+width: 550px;
     display: flex;
-   
-    justify-content: space-between;
+   justify-content:space-between;
+   margin: 0 auto;
     align-items: center;
 }
 
@@ -251,6 +299,7 @@ padding-top: 20px;
     border-left: solid 1px blue;
     border-right: solid 1px blue;
     border-bottom: solid 1px blue;
+
 }.sharebottom2{
     height: 50px;
     width: 160px;
@@ -272,18 +321,28 @@ padding-top: 20px;
 }
 
 .undernav{
-    width: 500px;
-    height: 70px;
+
+    height: 80px;
+    padding-top: 30px;
     margin: 0 auto;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
   
 }
+.navinner{
+    width: 500px;
 
+}
+
+.footercover{ 
+    background-color: rgb(86, 86, 86);
+}
 .footer{
 
     height: 150px;
     margin: 0 auto;
-    background-color: darkgray;
+
     display: flex;
     justify-content: space-between;
    
@@ -297,7 +356,7 @@ padding-top: 20px;
 .footerimg img{
     width: 90px;
 }
-.footertxt{
-text-decoration: rgb(0, 0, 0);
+.footertxt {
+color: #fff; rgb(255, 255, 255);
 font-size: 8px;
 }
