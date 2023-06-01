@@ -82,6 +82,10 @@ ul {
     background-image: url(public/src/main_visual_2-0x0.jpg);
 }
 
+.arrow{
+background: url(public/img/mainVisual-arrow@2x.png) no-repeat;
+}
+
 .tabibox {
   
     font-size: 20px;
@@ -322,6 +326,23 @@ a.btn_01:hover {
     background-color: rgb(205, 205, 205);
 }
 
+
+#scroll-to-top-btn{
+   
+   
+    height: 50px;
+    width: 50px;
+    color: #090909;
+    font-size: 32px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    transform: rotate(-90deg);
+   
+    }
+
+
 .share {
     height: 60px;
     width: 500px;
@@ -415,6 +436,6 @@ a.btn_01:hover {
 
 .footertxt {
     color: #fff;
-    rgb(255, 255, 255);
+   
     font-size: 8px;
 }
