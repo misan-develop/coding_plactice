@@ -476,48 +476,93 @@ img{
 
 .mainvisual{
  height: 720px;
-   margin-bottom: 120px;
+   margin-bottom: 50px;
    position: relative;
    
-
+   animation: fadein 5s ease-out forwards;
 }
 .mainvisual ul li img{
-  height: 720px;
+ 
      width:100%;
-   margin-left: auto;
+ 
 }
 .maintxt{
   font-size: 36px;
-  width:330px;
+  width:350px;
   height: 100px;
 position: absolute;
-top: 400px;
+top: 280px;
 left: 150px;
 z-index: 10;
+line-height: 1.5;
 margin-bottom: 30px;
-text-shadow: 0 4px 6px #fff;
-}
 
+}
+.maintxt1{
+  text-shadow: 0 4px 6px #fff;
+  margin-bottom: 20px;
+}
 .visualfade{
   width: 75%;
   margin-left: auto;
+ 
+  position: relative;
 }
+
+  .visualfade li{
+    width: 100%;
+    height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+   
+      opacity: 0;
+      animation-name: fade;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes fade {
+      0%{
+        opacity: 0;
+      }
+      20%{
+        opacity: 1;
+      }
+      80%{
+        opacity: 0;
+        
+      }
+      100%{
+        opacity: 0;
+        z-index: 0;
+      }
+    }
+    .vf2{
+      animation-delay: 4s;
+    }
+.vf3{
+  animation-delay: 8s;
+}
+
 .mainbtn{
  text-align: center;
-  padding:20px 30px 10px 30px ;
-  width: 300px;
-  height: 70px;
+  padding:15px 10px 10px 20px ;
+  width: 340px;
+  height: 60px;
+  box-shadow: 6px 5px 1px 3px #33fc97;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 20px;
   display: block;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 15px;
   color: #ffffff;
   background-color: #af5353;
   border: solid 1px #9c4c4c;
-  transition: 4s;
+  transition: .4s;
 }
-
-
+.mainbtn:hover{
+  transform: scale(1.1,1.1);
+}
 .mainbtn::after{
  
     content: "";
@@ -527,19 +572,32 @@ text-shadow: 0 4px 6px #fff;
     border-right: solid 3px #fff;
     transform: rotate(45deg);
     position: absolute;
-
+  margin-top: 5px;
  
-
 }
+
+
 .reasontitle{
- height: 100px;
-  margin-top: 100px;
+ height: 70px;
+
 }
 .reasontitle h2{
  text-align: center;
   font-size: 26px;
-}
+  position: relative;
 
+}
+.reasontitle h2::after{
+  content: "";
+  border-bottom:solid 3px #000000;
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  top: 50px;
+  left: 50%;
+margin-left: -50px;
+display: block;
+}
 
 
 
@@ -549,6 +607,7 @@ text-shadow: 0 4px 6px #fff;
 }
 .reason{
   background-color: brown;
+  margin-top: 80px;
 }
 .reasontitle h2{
   position:relative
@@ -578,7 +637,20 @@ align-items: center;
  background-color: #fff;
  border-radius: 0 15px 15px 0;
  margin-bottom: 40px;
+ animation: SlideIn 1s;
 }
+
+@keyframes SlideIn {
+  0% {
+    opacity: 0;/*初期状態では透明に*/
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .reasonimgl img{
 
   width: 120px;
@@ -595,7 +667,20 @@ align-items: center;
    margin-bottom: 15px;
    padding-right: 50px;
    margin-left: auto;
+   animation: SlideIn2 1s;
   }
+
+  @keyframes SlideIn2 {
+    0% {
+      opacity: 0;/*初期状態では透明に*/
+      transform: translateX(64px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 
   .reasonimgr img{
 
@@ -632,6 +717,18 @@ margin: left;}
      font-size: 26px;
      position: relative;
    }
+   .voicetitle h2::after{
+    content: "";
+    border-bottom:solid 3px #000000;
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    top: 50px;
+    left: 50%;
+  margin-left: -50px;
+  display: block;
+  }
+  
    .voicetitle h2::after {
     width: 100px;
     height: 3px;
@@ -705,7 +802,19 @@ display: flex;
 .sannay h2{
   font-size:28px;
   margin-top: 20px;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
+  position: relative;
+}
+.sannay h2::after{
+  content: "";
+  border-bottom:solid 3px #000000;
+  position: absolute;
+  height: 10px;
+  width: 100px;
+  top: 50px;
+  left: 50%;
+margin-left: -50px;
+display: block;
 }
 
 .sannaybigbox ul{
