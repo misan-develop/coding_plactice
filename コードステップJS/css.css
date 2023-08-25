@@ -433,7 +433,7 @@ th {
 
 
 .headerinner {
-padding: 40px 0 0 50px;
+padding: 0px 0 0 50px;
   
   height:100px;
 
@@ -451,7 +451,7 @@ padding: 40px 0 0 50px;
 
 }
 
-.nav {
+.header_nav {
   height: 75px;
   width: 100px;
   background-color: #fefefe;
@@ -460,6 +460,134 @@ padding: 40px 0 0 50px;
   right: 0;
 
 }
+
+
+
+/*  ハンバーガーメニューのスタイル  */
+.menu_btn {
+  cursor: pointer;
+ position:fixed;
+ 
+  display: block;
+  border-radius: 2px;
+  width: 100px;
+  height: 100px;
+  z-index: 30;
+  background-color: #00CC99;
+  top: 0px;
+  right: 0;
+  padding-top: 20px;
+  
+}
+.menu_btn span {
+  position: relative;
+  display: block;
+  height: 34px;
+  z-index: 3;
+  top:16px
+}
+.menu_btn:before,
+.menu_btn span:before,
+.menu_btn span:after {
+  content: "";
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  top: 50%;
+  height: 2px;
+  border-radius: 2px;
+  margin-top: -1px;
+  background-color: #5b77b6;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+      transition: all 0.2;
+      }
+
+
+.menu_btn span:before {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-20px);
+}
+.menu_btn span:after {
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(20px);
+}
+
+/* メニューを開いた状態のハンバーガーメニューのスタイル */
+.menu_btn.open:before {
+  opacity: 0;
+}
+.menu_btn.open span:before {
+  transform: translateY(0) rotate(45deg);
+}
+.menu_btn.open span:after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/* ヘッダーのスタイル */
+
+/* ナビゲーションメニューの初期状態 */
+.header_nav {
+  width: 100%;
+  position: fixed;
+  top: -360px;
+  left: 0;
+  color: #9c4c4c;
+  padding-top: 0;
+  z-index: 19;
+  text-align: center;
+  transition: all 0.5s;
+  transform: translateY(-100%); /* 初期状態では上方向に移動させて隠しておく */
+}
+.bbb_open{
+  position: absolute;
+  top:40px;
+  left:50px;
+}
+/* ナビゲーションメニューを開いた状態 */
+.header_nav.open {
+  z-index: 20;
+  height: 100vh;
+  background: #f8b4b4;
+ transform: translateY(360px); /* ヘッダーの高さ分下方向に移動する */
+}
+
+/* その他のスタイル */
+.header_nav ul {
+ margin: 80px ;
+ margin-bottom: 40px;
+ 
+  display: block;
+  
+}
+.header_nav ul li {
+  margin: 10px;
+  
+  background-color: #f8b4b4;
+  list-style: none;
+}
+.header_nav ul li a {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+.header_nav ul li a:hover {
+  border-bottom: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
 .hbtn{
   height: 100px;
 
@@ -472,18 +600,42 @@ padding: 40px 0 0 50px;
 
 }
 
-.menubtn {
-  text-align: center;
-  height: 60px;
-  width: 9px;
-  background-color: aqua;
-  padding: 10px 5px 10px 5px;
-  transition: 4s;
 
+
+
+.humberger_btn {
+  text-align: center;
+
+  padding:20px;
+  width: 250px;
+  height: 60px;
+  
+  margin: 0 auto;
+  font-size: 12px;
   display: block;
 
+  color: #ffffff;
+  background-color: #af5353;
+  border: solid 1px #9c4c4c;
+  transition: .4s;
+  position: absolute;
 }
 
+.humberger_btn:hover {
+background-color: #998eea;
+}
+
+.humberger_btn::after {
+
+  content: "　";
+  width: 250px;
+  border-right: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  padding: 15px 0;
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+}
 
 
 
