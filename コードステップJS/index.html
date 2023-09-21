@@ -6,43 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="./css.css" rel="sytlesheet"> -->
+
+
+
+    <!-- 最初に実装したJQさんに必要そう -->
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+
+   
+
     <script src="./js/script.js" defer></script>
-    <link rel="stylesheet" href="./script.js">
+  
+    <!-- slick（スライダー）さんの必要な奴そう-->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+            
+   
+   
     <link rel="stylesheet" href="./css.css">
 </head>
 
 <body>
+    
+
+
+
+
 
     <header>
         <div class="header">
             <div class="headerinner">
-                <div class="bbb">bbb</div>
-                <div class="menu_btn"><span></span>
-              
-                </div>
-                <nav class="header_nav"> 
+               
+
+                 <div class="menu_btn"><span></span>
+
+                 </div>
+                      <div class="sms_btn" id="sms_btn"><span></span></div>
+                    </div>
+                
+
+                <nav class="header_nav">
+
+
                     <div class="bbb_open">bbb</div>
                     <ul>
                         <li><a href="#">BBBが選ばれる理由</a></li>
                         <li><a href="#">受講生の声</a></li>
                         <li><a href="#">スクールの概要</a></li>
-                     
+
                     </ul>
-                   <a class="humberger_btn" href="#">無料体験に申し込む</a> </nav>
-              
-             
-
-
-               </nav>
-
-               
-                <!-- ハンバーガーメニューボタン -->
-
+                    <a class="humberger_btn" href="#">無料体験に申し込む</a>
                 </nav>
-            </div>
+                </div>
+            
+        </div>
+
+
+
+
+
+        </nav>
+        </div>
+
+        <!-- ハンバーガーメニューボタン -->
+
+        </nav>
+        </div>
 
 
 
@@ -75,10 +106,11 @@
 
         <div class="reasontitle">
 
-            <h2>BBBが選ばれる理由</h2>
+              
+              <h2>BBBが選ばれる理由</h2>
         </div>
 
-        <section class="reason">
+        <section class="reason" id="sec1">
 
 
             <div class="reasonboxl">
@@ -103,73 +135,163 @@
                 </div>
 
             </div>
-            <div class="reasoncbox"></div>
+
+</section>
+            <section class="reason" id="sec2">
+
+
+                <div class="scroll_show_left">
+                    <div class="reasonimg_hidari">
+                        <img src="public/icon-pc.png" alt="">
+                    </div>
+                    <div class="reason_txt"><span>jqでもやってみます</span>
+                        <br>
+                        <p>うまくできたらうれしい</p>
+                    </div>
+                </div>
+                <div class="scroll_show_right">
+                    <div class="reasonimg_migi">
+
+                        <img src="public/icon-teacher.png" alt="">
+                    </div>
+                    <div class="reason_txt">
+
+                        <span>なかなか手ごわい</span>
+
+                        <P>右左がわかりません</P>
+                    </div>
+
+                </div>
+                <div class="reasoncbox"></div>
         </section>
-        </div>
+           
 
-        <div class="maininner">
+            <div class="maininner">
 
 
-            <section class="voice">
+                <section class="voice">
 
-                <div class="voicetitle">
-                    <h2>受講生の声</h2>
-                </div>
-                <div class="voicebigbox">
-                    <div class="voiceboxl">
-                        <div class="voiceimg">
-                            <img src="public/icon-student1.png" alt="">
-                            <div class="voicenametxt">
-                                <p> ○○○さん<br>大学生</p>
-                            </div>
-
-                        </div>
-                        <div class="voicetxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </div>
+                    <div class="voicetitle">
+                        <h2>受講生の声</h2>
                     </div>
-                </div>
-
-
-                <div class="voicebigbox">
-                    <div class="voiceboxr">
-
-                        <div class="voicertxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                        </div>
-                        <div class="voiceimg">
-                            <img src="public/icon-student1.png" alt="">
-                            <div class="voicenametxt">
-                                <p> ○○○さん<br>右側きて</p>
-
+                    <div class="voicebigbox">
+                        <div class="voiceboxl">
+                            <div class="voiceimg">
+                                <img src="public/icon-student1.png" alt="">
+                                <div class="voicenametxt">
+                                    <p> ○○○さん<br>大学生</p>
+                                </div>
 
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="voicebigbox">
-                    <div class="voiceboxl">
-                        <div class="voiceimg">
-                            <img src="public/icon-student1.png" alt="">
-                            <div class="voicenametxt">
-                                <p> ○○○さん<br>大学生</p>
+                            <div class="voicetxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                             </div>
-
-                        </div>
-                        <div class="voicetxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                            テキストテキストテキストテキストテキストテキストテキストテキストテキスト
                         </div>
                     </div>
-                </div>
 
-            </section>
-        </div>
 
-        <section class="sannay">
+                    <div class="voicebigbox">
+                        <div class="voiceboxr">
+
+                            <div class="voicertxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+                            <div class="voiceimg">
+                                <img src="public/icon-student1.png" alt="">
+                                <div class="voicenametxt">
+                                    <p> ○○○さん<br>右側きて</p>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="voicebigbox">
+                        <div class="voiceboxl">
+                            <div class="voiceimg">
+                                <img src="public/icon-student1.png" alt="">
+                                <div class="voicenametxt">
+                                    <p> ○○○さん<br>大学生</p>
+                                </div>
+
+                            </div>
+                            <div class="voicetxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+                <section class="voice">
+
+
+
+                    <div class="voicebigbox">
+                        <div class="scroll_show_up">
+                            <div class="voiceimg">
+                                <img src="public/icon-student1.png" alt="">
+                                <div class="voicenametxt">
+                                    <p> 1人目<br>大学生</p>
+                                </div>
+
+                            </div>
+                            <div class="voicetxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="voicebigbox">
+                        <div class="scroll_show_up">
+
+                            <div class="voicertxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+                            <div class="voiceimg">
+                                <img src="public/icon-student1.png" alt="">
+                                <div class="voicenametxt">
+                                    <p> 二人目<br>右側きて</p>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="voicebigbox">
+                        <div class="scroll_show_up">
+                            <div class="voiceimg">
+                                <img src="public/icon-student1.png" alt="">
+                                <div class="voicenametxt">
+                                    <p> ○○○さん<br>大学生</p>
+                                </div>
+
+                            </div>
+                            <div class="voicetxt">テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </div>
+                        </div>
+                    </div>
+
+
+
+        </section>
+
+
+</div>
+
+        <section class="sannay" id="sec3">
             <div class="maininner">
                 <h2>スクールの概要</h2>
 
@@ -215,8 +337,39 @@
 
         </section>
 
+
+
+        <section class="slider" id="sec4">
+
+            <div class="slider-wrapper">
+                <ul class="slider">
+                  <li class="slider-item">
+                    <img src="public/mainvisual1.jpg" alt="">
+                  </li>
+                  <li class="slider-item">
+                    <img src="public/mainvisual2.jpg" alt="">
+                  </li>
+                  <li class="slider-item">
+                    <img src="public/mainvisual3.jpg">
+                  </li>
+                </ul>
+            </div>
+ 
+
+        </section>
+       
+
+
+
+
+
+
+
+
         <div class="maininner">
-            <div class="entry">
+            <div class="entry"id="sec5">
+    
+            
 
                 <p><span>まずは無料で、BBBの英会話を試してみませんか？</span></p>
                 <p class="entrytxt">今なら初月のレッスンを特別価格で受講できる割引クーポンをプレゼント！</p>
@@ -280,7 +433,9 @@
                 </div>
 
             </div>
-
+            <div class="maininner">
+                <div id="go_top">TOP</div>
+              </div>
             <div class="footertxt">
 
                 <P><span>下の文</span></P>
@@ -290,4 +445,13 @@
 
 
     </footer>
+       
+ <!-- jQueryライブラリの読込 -->
+ <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+ <!-- slickライブラリの読込 -->
+ <!--  slickライブラリはjqueryを使用している為、jqueryを先に読込する必要あり  -->
+ <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+
+
 </body>

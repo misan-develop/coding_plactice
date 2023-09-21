@@ -48,6 +48,7 @@
 
 nav ul{
   display: flex;
+ 
 }
 
 .nab li {
@@ -58,7 +59,12 @@ nav ul{
   padding-left: 50px;
 
 }
-
+.nav{
+  width: 880px;
+  display: flex;
+justify-content: space-between;
+  
+}
 .mainvisual img{
   height: 600px;
   width: 100%;
@@ -161,4 +167,96 @@ nav ul{
 
   text-align: center;
   justify-content: center;
+
  }
+
+
+
+ /* スライドを入れる箱 */
+.slider-wrapper {
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+.slider-item {
+  margin: 0 20px; /* スライドの間隔をあける */
+}
+.slider-item img {
+  max-width: 100%; /* スライドに入れる画像の幅をコンテナいっぱいとする */
+}
+/* 前へ・次への矢印のスタイル */
+.slide-arrow {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.slide-prev {
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  transform: rotate(-45deg);
+  left: -25px;
+}
+.slide-prev:hover {
+  transform: translateX(-3px) rotate(-45deg);
+}
+.slide-next {
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg);
+  right: -25px;
+}
+.slide-next:hover {
+  transform: translateX(3px) rotate(45deg);
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* ドットのスタイル */
+.slide-dots {
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+}
+.slide-dots li {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+.slide-dots li button {
+  border: 0;
+  background: 0;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+}
+.slide-dots li button::before {
+  content: "☆";
+  font-size: 16px;
+  color: black;
+}
+.slide-dots li.slick-active button::before {
+  content: "★";
+}
+
+/* 画面幅400px以下のスタイル */
+@media screen and (max-width: 400px) {
+  .slider-wrapper {
+    margin: 0;
+    padding: 10px;
+  }
+  .slider-item {
+    margin: 0 10px;
+  }
+}

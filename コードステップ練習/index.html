@@ -6,22 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="./css.css" rel="sytlesheet"> -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="./js/spript.js" defer></script>
+    <!-- スライダーのCSS読込 -->
+  
+
+ 
+
+
+
+
     <link rel="stylesheet" href="./css.css">
 </head>
 
 
 <body>
-    <div id="box"></div>
+ 
     <header class="header" id="headerinner">
     <main>
-     
+        <nav class="nav">
             <h1 class="logo">
                 <a href="index.html">Profile</a>
             </h1>
-            <nav>
+       
                 <ul>
                     <li class="abli"><a href="aboutlink"></a>About</li>
                     <li class="abli"><a href="bicyclelink"></a>Bicycle</li>
@@ -75,6 +85,35 @@
         </div>
 
     </section>
+
+
+    <div class="slider-wrapper">
+
+        <!-- スライダー化する要素をこの中に並べる -->
+        <ul class="slider">
+          <li class="slider-item">
+            <img src="https://drive.google.com/uc?export=view&id=1dKtQh86Bg5t5ROyzaDBCQRLVJXj04XuE" alt="">
+          </li>
+          <li class="slider-item">
+            <img src="https://drive.google.com/uc?export=view&id=1iqsTzfDQYhbo4NL41xKUjcpXMf8XKNNf" alt="">
+          </li>
+          <li class="slider-item">
+            <img src="https://drive.google.com/uc?export=view&id=1Z9nXkBkYnHjrKKtjHqKXpjuK1qBNl4c1" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <!-- jQueryライブラリの読込 -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <!-- slickライブラリの読込 -->
+  <!--  slickライブラリはjqueryを使用している為、jqueryを先に読込する必要あり  -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  
+
+				
+
+
 </main>
     <footer class="footer"> 
         © 2020 Profile

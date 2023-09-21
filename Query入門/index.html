@@ -1,0 +1,238 @@
+
+<html>
+
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"defer></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"defer></script>
+
+  <script src="script.js" defer></script>
+  <!-- スライダーのCSS読込 -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="wrapper header_wrap">
+      <h1 class="header_ttl">タイトル</h1>
+      <nav class="header_nav">
+        <ul>
+          <!-- ページ内リンク(リンク先のIDを指定) -->
+          <li><a href="#sec1">section01</a></li>
+          <li><a href="#sec2">section02</a></li>
+          <li><a href="#sec3">section03</a></li>
+          <li><a href="#sec4">section04</a></li>
+          <li><a href="#sec5">section05</a></li>
+        </ul>
+      </nav>
+      <div class="menu-btn" id="menu-btn"><span></span></div>
+    </div>
+  </header>
+  
+  <main>
+    <!-- ページ内リンク先として使う為、各セクションにIDを指定する -->
+    <section id="sec1">
+      <h2>section01</h2>
+
+
+
+      <h2>後に並ぶ兄弟要素のアコーディオン化</h2>
+      <div class="box">
+        <p class="accordion1">
+          クリックすると目次を表示します
+        </p>
+        <!-- ↓アコーディオンとする目次 -->
+        <ul class="toc">
+          <li>目次１</li>
+          <li>目次２</li>
+          <li>目次３</li>
+        </ul>
+      </div>
+      
+      <h2>後に並ぶ兄弟要素のアコーディオン化(矢印付)</h2>
+      <div class="box">
+        <p class="accordion2">
+          クリックすると目次を表示します
+        </p>
+        <!-- ↓アコーディオンとする目次 -->
+        <ul class="toc">
+          <li>目次１</li>
+          <li>目次２</li>
+          <li>目次３</li>
+        </ul>
+      </div>
+      
+      <h2>入れ子になっているリストのアコーディオン化 その1</h2>
+      <p>各自開いたリストはもう一度クリックするまで閉じません</p>
+      <div class="box">
+        <!-- ネストされているulをアコーディオンとする -->
+        <ul class="accordion3">
+          <li>menu1
+            <ul>
+              <li>menu1-1</li>
+              <li>menu1-2</li>
+              <li>menu1-3</li>
+            </ul>
+          </li>
+          <li>menu2
+            <ul>
+              <li>menu2-1</li>
+              <li>menu2-2</li>
+              <li>menu2-3</li>
+            </ul>
+          </li>
+          <li>menu3
+            <ul>
+              <li>menu3-1</li>
+              <li>menu3-2</li>
+              <li>menu3-3</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      <h2>入れ子になっているリストのアコーディオン化 その2</h2>
+      <p>こちらはクリックしたときに他の開いているリストがあれば閉じます</p>
+      <div class="box">
+        <!-- ネストされているulをアコーディオンとする -->
+        <ul class="accordion4">
+          <li>menu1
+            <ul>
+              <li>menu1-1</li>
+              <li>menu1-2</li>
+              <li>menu1-3</li>
+            </ul>
+          </li>
+          <li>menu2
+            <ul>
+              <li>menu2-1</li>
+              <li>menu2-2</li>
+              <li>menu2-3</li>
+            </ul>
+          </li>
+          <li>menu3
+            <ul>
+              <li>menu3-1</li>
+              <li>menu3-2</li>
+              <li>menu3-3</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      <h2>stop()メソッドが無いアコーディオン</h2>
+      <div class="box">
+        <p class="accordion5">
+          クリックすると目次を表示します<br>
+          ※連打したときに必ず最後までクリック回数分動きます
+        </p>
+        <!-- ↓アコーディオンとする目次 -->
+        <ul class="toc">
+          <li>目次１</li>
+          <li>目次２</li>
+          <li>目次３</li>
+        </ul>
+      </div>
+
+    </section>
+    <section id="sec2">
+      <h2>section02</h2>
+    </section>
+    <section id="sec3">
+      <h2>section03</h2>
+    </section>
+    <section id="sec4">
+      <h2>section04</h2>
+    </section>
+    
+  
+  <div class="slider-wrapper">
+
+    <!-- スライダー化する要素をこの中に並べる -->
+    <section id="sec5">
+      <h2>section05</h2>
+ 
+    <ul class="slider">
+      <li class="slider-item">
+        <img src="https://drive.google.com/uc?export=view&id=1dKtQh86Bg5t5ROyzaDBCQRLVJXj04XuE" alt="">
+      </li>
+      <li class="slider-item">
+        <img src="https://drive.google.com/uc?export=view&id=1iqsTzfDQYhbo4NL41xKUjcpXMf8XKNNf" alt="">
+      </li>
+      <li class="slider-item">
+        <img src="https://drive.google.com/uc?export=view&id=1Z9nXkBkYnHjrKKtjHqKXpjuK1qBNl4c1" alt="">
+      </li>
+    </ul>
+  </section>
+  </div>
+
+
+
+
+  
+
+<h2>カテゴリ選択</h2>
+
+<!-- カテゴリ選択ボタン -->
+<nav>
+  <ul class="category">
+    <li id="category_all">全て</li>
+    <li id="category_web">WEB制作</li>
+    <li id="category_app">アプリ開発</li>
+    <li id="category_money">マネー</li>
+    <li id="category_training">筋トレ</li>
+  </ul>
+</nav>
+
+<h3>記事一覧</h3>
+
+<!-- カテゴリでフィルタされる記事 -->
+<ul class="article">
+  <li class="web">HTML入門</li>
+  <li class="app">ReactNative入門</li>
+  <li class="web">CSS入門</li>
+  <li class="web">JavaScript入門</li>
+  <li class="app">Expoでアプリ開発</li>
+  <li class="training">自作パワーラック</li>
+  <li class="money">ポイ活のススメ</li>
+  <li class="money">Fireって何？</li>
+  <li class="training">ベンチプレスのコツ</li>
+  <li class="app">ReactNative入門</li>
+  <li class="money">株オススメ銘柄</li>
+  <li class="training">自重トレオススメ</li>
+  <li class="training">有酸素運動の必要性</li>
+</ul>
+
+
+
+
+
+  <!-- jQueryライブラリの読込 -->
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <!-- slickライブラリの読込 -->
+  <!--  slickライブラリはjqueryを使用している為、jqueryを先に読込する必要あり  -->
+ 
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
