@@ -1,4 +1,3 @@
-
 $(function () {
   // ハンバーガーメニューボタンにクリックイベントを指定
   $(".menu_btn").click(function () {
