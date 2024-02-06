@@ -2,31 +2,8 @@
 
 
 
-  .section {
-    max-width: 800px;
-    height: 400px;
-     /*ここの高さがスライダー本体の高さになりそう*/
-    margin: 0 auto;
-    padding: 30px 0;
-  }
-  .sliderArea.w300 {
-    max-width: 300px;
-
-  }
- 
-     /*.sliderArea .slick_space{
-  height:350px *section ちゃんとしてたらいらない気がする
-       max-width: 100%;
-       margin: 10px auto;
-       padding: 0 25px;
-     
-       }*/
 .slider {
-  width:1600px;
-
-    line-height: 0;
-    /* font-size: 0; ← こちらでも、余白がなくなります */
-    font-size: 0;
+  width: 1600px;
   max-width: 100%;
   margin: 0 auto 80px;
   position: relative;
@@ -37,20 +14,31 @@
     overflow: visible;}
 
 
+
+.slick_space{
+ 
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+.slick_space.w300 {
+	max-width: 300px;
+}
 .slick-slide {
   
 	margin: 0 20px;
 }
 .slick-slide img {
 	width: 100%;
-	
+	height: auto;
 
 }
 .slick-prev, .slick-next {
 	z-index: 1;
 }
-
-
+.slick-prev:before, .slick-next:before {
+	color: #ccff02;
+}
 .slick-slide {
 	transition: all ease-in-out .3s;
 	opacity: .2;
@@ -98,7 +86,7 @@ body {
 }
 .section p._a .link {
   display: inline-block;
-
+  color: #607D8B;
   padding-left: 1.3em;
   text-indent: -1.3em;
 }
@@ -107,7 +95,8 @@ body {
   display: inline-block;
   width: 5px;
   height: 5px;
- 
+  border-top: 2px solid #607D8B;
+  border-right: 2px solid #607D8B;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-right: 10px;
@@ -132,48 +121,114 @@ body {
 
 
 
-.slide-arrow{
+.box{
+  height: 70px;
+  width: 70px;
+  position: relative;
+  background-color: aqua;
+  border-radius: 50%;
+  top:150px;
+}
+
+.box::after{
+  content:"" ;
   position: absolute;
+  display: inline-block;
+  top:20%;
+  left: 15%;
   height: 50px;
   width: 50px;
-  background-color: aqua;
-  top:160px;
-  border-radius: 100%;
-  
-}
-.slide-arrow:before{
-content:"";
-position:absolute;
-height: 40px;
-width: 40px;
-background-color: chartreuse;
-border-radius: 100%;
-top:4px;
-left:3px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  z-index: 5;
+
 }
 
-.slide-arrow::after{
-  position:absolute;
+
+.box::before{
   content:"";
-  border-top:3px solid black;
-  border-left:3px solid black;
-  height: 10px;
-  width: 10px;
- top:18px;
+  display:block;
+  width:30px;
+  height:30px;
+  border-top:5px solid #333;
+  border-right:5px solid #333;
+  position:absolute;
+  top:40%;
+  right:10px;
+  transform:rotate(-135deg);
+  
+  z-index: 6;
 
 }
-.next-arrow{
-  position: absolute;
-  right:3%}
-.prev-arrow::after{
-  transform: rotate(-45deg);
+
+
+.slide-arrow{
+  width: 60px;
+  height: 60px;
+background-color: aqua;
+position: absolute;
+  border-radius: 100%;
+
+border: #fff;
+z-index: 4;
+}
+
+
+
+
+.slide-arrow::after {
+content: "";
+position: absolute;
+top:22px;
+left: 20px;
+width: 10px;
+height: 10px;
+
+border-left: 5px solid #fff;
+border-bottom: 5px solid #fff;
+z-index: 100;
 
 }
-.next-arrow{
+
+
+.slide-arrow::before{
+  height: 40px;
+  width: 40px;
+  content: '';
   position: absolute;
-  right:3%;
-}.next-arrow::after{
-  transform: rotate(135deg);
+  z-index: 5;
+  background-color: #11d614;
+  border-radius: 100%;
+  top: 15%;
+  left: 15%;
+}
+
+
+
+.slick-prev::after{
+  transform: rotate(45deg);
+
+}
+.slick-prev{
   position: absolute;
-  left:14px;
+  top:45%
+}
+
+
+
+.slick-next::after{
+  transform: rotate(225deg);
+
+}
+.slick-next{
+  position: absolute;
+  top:45%;
+  left:90%;
+}
+
+
+
+.sliderArea{
+  height: 350px;
+  margin-bottom: 50px;
 }

@@ -1,0 +1,178 @@
+
+<html>
+
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"defer></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"defer></script>
+
+  <script src="script.js" defer></script>
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+  <header class="header">
+ 
+  </header>
+  
+
+
+  
+<div class="section">
+  <main>
+正解
+
+  <div class="sliderArea">
+    <div class="slider_1 slider">
+      <div><img src="https://125naroom.com/demo/img/itukanokotonokoto01.jpg" alt="125naroom"></div>
+      <div><img src="https://125naroom.com/demo/img/itukanokotonokoto02.jpg" alt="125naroom"></div>
+      <div><img src="https://125naroom.com/demo/img/itukanokotonokoto03.jpg" alt="125naroom"></div>
+      <div><img src="https://125naroom.com/demo/img/itukanokotonokoto04.jpg" alt="125naroom"></div>
+      <div><img src="https://125naroom.com/demo/img/itukanokotonokoto05.jpg" alt="125naroom"></div>
+    </div>
+  </div>
+
+ よくなった
+ 
+  <div class="sliderArea">
+    <div class="slider_1 slider">
+          <div class="slick1-img"><img src="public/src/a39ac5e98b200816c45b533ee642d1c8.jpg" alt="">
+          <figcaption>企業・団体様向けの新型コロナウイルス抗原検査キットのご案内</figcaption></div>
+          
+          <div class="slick1-img"><img src="public/src/bn_1711docomo_l-1000x598.jpg" alt="">
+          <figcaption>サツドラでｄポイントがたまる、使える</figcaption>
+          </div>
+          
+          <div class="slick1-img">
+          <img src="public/src/872f45c3edbd755e5f550931a30000df.jpg" alt="">
+          <figcaption>北海道エリア限定！抽選で5000円キャッシュバックキャンペーン</figcaption>
+
+                  <div class="slick1-img">
+                <img src="public/src/872f45c3edbd755e5f550931a30000df.jpg" alt="">
+                <figcaption>北海道エリア限定！抽選で5000円キャッシュバックキャンペーン</figcaption>
+            </div>
+     </div>   
+</div>
+
+
+
+  <div class="box"></div>
+
+いい感じ
+  <div class="section">
+    <div class="sliderArea">
+
+      <div class="slider_1 slider">
+        <div class="slider-img"><img src="public/src/a39ac5e98b200816c45b533ee642d1c8.jpg" alt="">
+          <figcaption>企業・団体様向けの新型コロナウイルス抗原検査キットのご案内</figcaption>
+        </div>
+        <div class="slider-img">
+          <img src="public/src/bn_1711docomo_l-1000x598.jpg" alt="">
+          <figcaption>サツドラでｄポイントがたまる、使える</figcaption>
+        </div>
+        <div class="slider-img">
+          <img src="public/src/872f45c3edbd755e5f550931a30000df.jpg" alt="">
+          <figcaption>北海道エリア限定！抽選で5000円キャッシュバックキャンペーン</figcaption>
+        </div>
+        <div class="slider-img">
+          <img src="public/src/872f45c3edbd755e5f550931a30000df.jpg" alt="">
+          <figcaption>北海道エリア限定！抽選で5000円キャッシュバックキャンペーン</figcaption>
+        </div>
+        <div class="slider-img">
+          <img src="public/src/872f45c3edbd755e5f550931a30000df.jpg" alt="">
+          <figcaption>北海道エリア限定！抽選で5000円キャッシュバックキャンペーン</figcaption>
+        </div>
+        <div class="slider-img">
+          <img src="public/src/872f45c3edbd755e5f550931a30000df.jpg" alt="">
+          <figcaption>北海道エリア限定！抽選で5000円キャッシュバックキャンペーン</figcaption>
+        </div>
+        
+      </div>
+  </div>
+</div>
+ 
+.example{
+  height: 50px;
+  width: 50px;
+ 
+  background: #eb762e;
+  color: #FFF;
+  border-radius:100%;
+  position: absolute;
+}
+.example::before{
+  content:"";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #0d45ff;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+  
+.example::after{
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid #eb762e;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;}
+
+  .slider .example::after{
+    position: absolute;
+  
+    transform: rotate(60deg);}
+<div class="section">
+
+  $(function() {
+    $(".slick1").slick({
+   
+      autoplay: true,
+      adaptiveHeight: true,
+      centerMode: true,
+   
+      dots: false,
+  
+      centerPadding: '5%',
+      infinite: true,
+      slidesToShow: 1,
+      prevArrow: '<button class=" slick-prev slide-arrow "></button>',
+      nextArrow: '<button class="example slide-arrow slick-next"></button>',
+      slidesToScroll: 1,
+      }
+      )
+      
+      
+    
+    console.log(2)
+  
+   
+      $(".slider_1").slick({
+        centerPadding: '5%',
+        infinite: true,
+        slidesToShow: 1,
+        prevArrow: '<button class=" slick-prev slide-arrow "></button>',
+        nextArrow: '<button class="example slide-arrow slick-next"></button>',
+        slidesToScroll: 1,
+        centerMode: true,
+        
+      });
+    });
+  
+  

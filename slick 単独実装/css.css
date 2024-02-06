@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+*{margin: 0;
+  padding: 0;  
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.slider {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 80%;
+}
+.slider-img {
+  margin: 0 10px;
+}
+.slider-img img {
+  height: auto;
+  width: 100%;
+}
+
+
+
+/* スライドを入れる箱 */
+.slider-wrapper {
+  width: 700px;
+  max-height: 350px;
+
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+.slider-item {
+  margin: 0 20px; /* スライドの間隔をあける */
+}
+.slider-item img {
+  max-width: 100%; /* スライドに入れる画像の幅をコンテナいっぱいとする */
+}
+.slick-slide{
+  height: auto;
+}
+/* 前へ・次への矢印のスタイル */
+.slide-arrow {
+  width: 15px;
+  height: 15px;
+  transition: transform 0.3s;
+  position: absolute;
+  top: 25%;
+  cursor: pointer;
+}
+.slide-prev {
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+  transform: rotate(-45deg);
+  left: -25px;
+}
+.slide-prev:hover {
+  transform: translateX(-3px) rotate(-45deg);
+}
+.slide-next {
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg);
+  right: -25px;
+}
+.slide-next:hover {
+  transform: translateX(3px) rotate(45deg);
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* ドットのスタイル */
+.slide-dots {
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+}
+.slide-dots li {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  
+}
+.slide-dots li button {
+  border: 0;
+  background: 0;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+  
+}
+.slide-dots li button::before {
+  content: "☆";
+  font-size: 16px;
+  color: black;}
+  
+.slide-dots li.slick-active button::before {
+  content: "★";
+}
+
+/* 画面幅400px以下のスタイル */
+@media screen and (max-width: 400px) {
+  .slider-wrapper {
+    margin: 0;
+    padding: 10px;
+  }
+  .slider-item {
+    margin: 0 10px;
+  }
+}
+
+/* その他スタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_nav {
+  font-family: "Noto Sans Jp", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header_nav ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header_nav ul li {
+  margin: 0 20px;
+}
+.header_nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.header_nav ul li a:hover {
+  border-bottom: 3px solid #ffcf65;
+}
+
+.menu-btn {
+  display: none;
+}
+
+section {
+  
+  margin: 30px 100px 30px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  /*  ハンバーガーメニュー  */
+  .menu-btn {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    border-radius: 2px;
+    width: 32px;
+    z-index: 20;
+  }
+
+  .menu-btn span {
+    position: relative;
+    display: block;
+    height: 32px;
+    z-index: 3;
+  }
+
+  .menu-btn:before,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    top: 50%;
+    height: 2px;
+    border-radius: 2px;
+    margin-top: -1px;
+    background-color: #5b77b6;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  .menu-btn span:before {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  .menu-btn span:after {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -o-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+
+  /* メニューを開いた状態のハンバーガー */
+  .menu-btn.open:before {
+    opacity: 0;
+  }
+
+  .menu-btn.open span:before {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .menu-btn.open span:after {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .header {
+    padding: 0;
+    position: relative;
+    z-index: 0;
+  }
+  .header_wrap {
+    background-color: white;
+  }
+  .header_nav {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.5s;
+    transform: translateY(-100%);
+    z-index: -10;
+  }
+
+  .header_nav.open {
+    transform: translateY(0);
+  }
+
+  .header_nav ul {
+    display: block;
+  }
+
+  .header_nav ul li {
+    margin: 0;
+    border-bottom: 1px dotted black;
+    background-color: #fff1bf;
+    list-style: none;
+  }
+
+  .header_nav ul li a {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .header_nav ul li a:hover {
+    border-bottom: none;
+  }
+}
+
+
+
+
+
+/* アコーディオンで開く目次 */
+.toc {
+  display: none; /* 初期状態では非表示とする */
+  background-color: #eee;
+}
+
+/* 各アコーディオン */
+.accordion1 {
+  cursor: pointer; /* カーソルを変えて、クリックできるように見せる */
+  text-decoration: underline;
+}
+.accordion2 {
+  cursor: pointer; /* カーソルを変えて、クリックできるように見せる */
+  text-decoration: underline;
+}
+/* .accordion2メニューの後ろにつける矢印 */
+.accordion2:after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #000;
+  border-right: solid 2px #000;
+  transition: transform 0.2s;
+  transform: rotate(135deg);
+}
+/* .accordion2を開いた状態 */
+.accordion2.open:after {
+  transform: rotate(-45deg);
+}
+.accordion3 ul {
+  display: none; /* 初期状態では非表示とする */
+  padding-inline-start: 40px;
+ 
+}
+.accordion3{
+    padding-right: 20px;
+}
+.accordion3 li {
+  cursor: pointer; /* カーソルを変えて、クリックできるように見せる */
+  text-decoration: underline;
+ 
+}
+.accordion4 ul {
+  display: none; /* 初期状態では非表示とする */
+  padding-left: 20px;
+  
+}
+.accordion4 li {
+  cursor: pointer; /* カーソルを変えて、クリックできるように見せる */
+  text-decoration: underline;
+  padding-left: 20px;
+}
+.accordion5 {
+  cursor: pointer; /* カーソルを変えて、クリックできるように見せる */
+  text-decoration: underline;
+}
+.box {
+  margin-bottom: 50px;
+  padding: 30px;
+      border: 1px solid #008dab;}
+
+
+
+
+
+
+
+      HTML CSS JSResult Skip Results Iframe
+EDIT ON
+/* カテゴリ選択ボタンのスタイル */
+.category {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.category li {
+  margin: 5px 5px;
+  padding: 5px 10px;
+  background: #cbcdcd;
+  border: 1px solid #8b8b8b;
+  border-radius: 5px;
+  font-size: 12px;
+  list-style: none;
+  cursor: pointer;
+}
+/* 選択されたカテゴリボタンのスタイル */
+.category li.select {
+  cursor: default;
+  background: #008dab;
+  color: white;
+}
+.category li:before {
+  content: "▶";
+  display: inline;
+}
+
+/* カテゴリでフィルタされる記事のスタイル */
+.article li {
+  width: 80%;
+  padding: 5px 10px;
+  border-bottom: 1px solid #8b8b8b;
+  list-style: none;
+}
+.article li::before {
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+  padding: 0 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.article li.web::before {
+  content: "WEB制作";
+  background: #ffa500;
+}
+.article li.app::before {
+  content: "アプリ開発";
+  background: #adff2f;
+}
+.article li.money::before {
+  content: "マネー";
+  background: #ff7f50;
+}
+.article li.training::before {
+  content: "筋トレ";
+  background: #87cefa;
+}
+
+
+
+.slick1-img{
+  width: 250px;
+  height: 150px;
+  margin: 0 10px;
+}
+.slick1 {
+  margin: 0 auto;
+  max-width: 300px;
+  width: 80%;
+}
+
+.slick-img img {
+  height: auto;
+  width: 100%;
+}
+
