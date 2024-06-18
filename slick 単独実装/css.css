@@ -434,3 +434,43 @@ EDIT ON
   width: 100%;
 }
 
+
+
+main {
+  width: 100%;
+  margin: 0px auto 10px;
+  background-color: lightcyan;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__link {
+  display: block;
+  padding: 10px 20px;
+}
+
+.menu__link:hover {
+  background-color: #ebebeb;
+  color: #666;
+}
+
+.drop-menu {
+  position: absolute;
+  top: 43px;
+  transition: all .3s;
+}
+
+.drop-menu__link {
+  display: block;
+  /* display: none; デフォルトの設定は消す */ 
+  background-color: #ebebeb;
+  transition: all .3s;
+  padding: 5px 20px;
+}
+
+.drop-menu__link:hover {
+  background-color: lightcyan;
+}

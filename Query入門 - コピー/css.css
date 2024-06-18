@@ -232,3 +232,39 @@ z-index: 100;
   height: 350px;
   margin-bottom: 50px;
 }
+
+$(".slider-2nd").slick({
+  arrows: true,
+  autoplay: true,
+  adaptiveHeight: true,
+  centerMode: true,
+  centerPadding: "5%",
+  prevArrow: "<button class='prev-arrow slide-arrow'></button>", // 前へボタン
+  nextArrow: "<button class='next-arrow slide-arrow'></button>", // 次へボタン
+  infinite: true,
+});
+
+
+
+  $("slider-top").slick({
+    arrows: true,
+    autoplay: true,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: "20%",
+    prevArrow: "<button class='prev-arrow slide-arrow'></button>", // 前へボタン
+    nextArrow: "<button class='next-arrow slide-arrow'></button>", // 次へボタン
+    infinite: true,
+  });
+
+
+
+
+
+
+    
+
+
+
+ 
+

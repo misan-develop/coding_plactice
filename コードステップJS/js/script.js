@@ -104,3 +104,54 @@ $(function () {
  
 
 });
+
+ 
+$(function() {
+  $(this).toggleClass("slider-1st");
+  $('.slider-1st').slick({
+   
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+  
+     asNavFor: '.slider-2nd'
+ });
+
+
+ $('.slider-2nd').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  autoplay: false,
+  autoplaySpeed: 5000,
+  speed: 1000,
+   asNavFor: '.slider-1st'
+ });
+
+
+  $('.slider-3rd').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+ 
+     asNavFor: '.slider-4th'
+ });
+ $('.slider-4th').slick({
+  　 slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-3nd',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  autoplay: false,
+  autoplaySpeed: 5000,
+  speed: 1000
+ });
+ });
+
+ 

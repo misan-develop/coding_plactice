@@ -1,0 +1,535 @@
+@charset "UTF-8";
+
+*{margin: 0;
+  padding: 0;  
+}
+
+* {
+  box-sizing: border-box;
+}
+.top{
+
+ position: relative;
+  background: url(public/src/wall.png) repeat;
+  overflow: hidden;
+  
+margin: 0 auto;
+}
+
+
+.bghidari{
+  position: absolute;
+  right: 0;
+  
+}
+.top_bg{
+background-image: url(public/src/top_topbg.png);
+background-repeat: repeat-x;}
+
+.mainbg{
+  position: absolute;
+
+  left: 210px;
+  background-image: url(public/src/top_topbg.png);
+  background-repeat: repeat-x;
+  
+ }
+
+
+
+
+ .main{
+  height:1080px; 
+  margin: 0 auto;
+padding-left: 15%;
+  position: relative;
+  
+  }
+
+.mainimg{
+  position: absolute;
+  height: 600px;
+
+  vertical-align: bottom;
+  margin: 0 auto;
+
+}
+
+  .menu{ 
+    position: absolute;
+  
+    left:219px;
+    top:566px;
+    height: 165px;
+  text-align: center;
+  margin: 0px auto;
+  width: 1000px;
+  background: url(public/src/top_mainbg01.png) repeat no-repeat;
+  vertical-align: top;
+  }
+.menu ul {
+  position: relative;
+  top: 2500px;
+  left: 260px;
+  display: flex;
+  list-style: none;
+}
+
+
+.start_btn {
+  position:absolute;
+  top:220px;
+  left: 700px;
+  background: #882941;
+padding: 60px 20px;
+font-size: 14px;
+  border: none;
+  height: 150px;
+  width: 150px;
+  border-radius: 45%;
+
+}
+.start_btn:hover {
+   
+  background: #fff;
+
+}
+
+.start_btn span{
+  width: 50px;
+  height: 2px ;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  transition: 0.3s ease-in-out;
+}
+.start_btn span:nth-child(1){
+top:5px}
+.start_btn span:nth-child(2){
+  top:-2px}
+  
+  
+
+.oldlight{
+  height: 350px;
+  width: 1024px;
+  margin: 16px 80px;
+  justify-content: center;
+}
+.news_box{
+  display: flex;
+  height: 450px;
+  width: 1200px;
+
+  position: absolute;
+
+
+margin: -90px 70px 0;
+}
+.news{
+  position: relative;
+  height: 400px;
+}
+.news_txt{position: absolute;
+left: 100px;
+color: white;
+top: 100px;
+left: 100px;}
+
+
+.news_box img{
+  vertical-align: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tw{
+  height: 450px;
+}
+.twframe2{
+  position: absolute;
+  top:130px;
+  left: 500px;
+  
+}
+.twitter-timeline{
+  position: absolute;
+z-index: 20;
+left: 520px;
+top:60px
+}
+
+
+
+
+.big_news{
+  height: 200px;
+  width: 1024px;
+  margin: 80px auto 0 auto;
+position: relative;}
+
+.big_news_list{
+  height: 120px;
+  width: 1024px;
+
+  background-color: #fff;
+  opacity: 0.4;
+  position: relative;
+  margin:  0px 40px;
+  overflow: auto;
+}
+.big_news_title{
+  position: absolute;
+  left: 40px;
+  top: -50px;
+  height: 50px;
+  width: 1024px;
+  margin: 0 auto;
+
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(90, 55, 25));}
+
+.big_news_title img{
+  height: 50px;
+  width: 130px;
+  margin-left: 20px;
+}
+.big_news_list ul{
+ 
+  margin: 24px;
+font-size: 20px;
+list-style: none;
+}
+  .big_news_list ul li{
+    margin: 20px;
+  }
+ 
+
+
+  
+  .update{
+    height: 70px;
+    width: 1024px;
+    margin: 80px auto 0 auto;
+    background-color: #fff;
+    opacity: 0.4;
+    position: relative;
+    padding: 30px;
+  
+    }
+    
+    .updateimg{
+      position: absolute;
+      top:0;
+      left: -1px;
+      width: 190px;
+      height: 28px;
+      background: #000000;
+    }
+  .update ul{
+    display: flex;
+   margin: 0 40px;
+font-size: 20px;
+list-style: none;
+
+  }
+    .update ul li{
+      margin: 3px auto;
+    }
+    
+
+    .updateul li :hover {
+      color: #000;
+      background: #fff;}
+
+      .update_box{
+        margin: 0 auto;
+      }
+      
+.updateul{
+  margin: 0px auto;}
+.section{
+  width: 1072px;
+  height:600px;
+  position:absolute ;
+  margin: 0 auto;
+  top:1200px;
+  left: -150px;
+}
+.battle_slick{
+  position:absolute;
+  right:  60px;
+  height: 600px;
+  margin-bottom: 50px;
+
+  position: relative;
+  height: 660px;
+width: 1600px;
+
+
+  margin: 0 auto 150px;}
+
+  .slick1{  position:relative;
+
+  }
+
+  .haba1{
+    width: 500px;
+
+    padding: 10px;
+
+    overflow: hidden;
+    position: relative;
+
+  }
+.slick1 .slick-slide img{
+  width:900px;
+  height:550px;
+max-width: 100%;
+  margin: 0 auto 20px;
+
+}
+
+.slide-dots {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+}
+.slide-dots li {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+.slide-dots li button {
+  border: 0;
+  background: 0;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+}
+.slide-dots li button::before {
+  content: "☆";
+  font-size: 16px;
+  color: black;
+  background-color: #000000;
+}
+.slide-dots li.slick-active button::before {
+  content: "★";
+color: #fff;}
+
+
+  .slick1 figcaption{
+    margin-left: 60px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+
+
+  
+  .contact{
+    height:180px;
+    width: 1024px;
+    margin: 40px 200px 180px auto;
+ 
+    position: relative;
+    padding: 30px;
+
+    }
+    .contact_mask{
+      background: rgba(255,255,255,0.5);
+ 
+    }
+    .contactimg{
+      position: absolute;
+      top:0;
+      left:28px;
+      width: 190px;
+      height: 28px;
+      background: #000000;
+    }
+
+
+
+
+  .contact_mask ul{
+    display: flex;
+ 
+font-size: 20px;
+list-style: none;
+
+  }
+  .contact_mask ul li{
+      margin: 10px auto;
+      text-align: center;
+     
+    }
+
+
+
+.navdxbox{
+  height: 150px;
+  width: 1000px;
+  margin: -6px 0;
+  position: relative;
+  vertical-align: top;
+  background: url(public/src/top_mainbg01.png);
+}
+.navbigbox{
+
+position: absolute;
+  height: 200px;
+  width: 560px;
+  left: 250px;
+  margin: 0px;
+  z-index: 20;;
+}
+    .navbox{
+      display: flex;
+      list-style: none;
+    }
+    .navbox .menu__item {
+      width: 100%;
+      margin-right: 3px;
+      position: relative;
+    }
+    .navbox .menu__item  ul li{
+margin: -10px 0 0 10px;}
+
+      .navbox .menu__item:last-child {
+      margin-right: 0;
+    }
+    .navbox  a {
+      font-size: 18px;
+      display: block;
+      text-align: left;
+      padding: 3px 0;
+      color: #fff;
+      opacity: 0.9;
+      
+      transition:opacity 0.3s ease;
+      text-decoration: none;
+    }
+    .navbox a:hover {
+      opacity: 0.7;
+      text-decoration: none;
+    }
+    .navbox .menu__drop {
+      margin-bottom: 10px;
+      height: 25px;
+    }
+    .navbox .menuSub {
+      display: none;
+      list-style: none;
+      
+    }
+ 
+
+
+    .footer{
+  position: relative;
+      height: 200px;
+      width: 3600px;
+      background: url(public/src/foot_bg.png)repeat-x;
+left:50%;
+margin-left: -1800px;
+    }   
+    
+
+    .hbg_area{
+      width: 1000px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      position: relative;
+      align-items: center;
+    }
+    .navbox.active {
+      transform: translateX(0);
+    }
+
+    .hamburger {
+      width: 100px;
+      height: 100px;
+      background-color: #ff2a2a;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 30;
+      cursor: pointer;
+      transition: 0.3s;}
+
+
+
+    .hamburger span{
+  width: 50px;
+  height: 2px ;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  transition: 0.3s ease-in-out;
+}
+
+  
+       /* 1本目の線の位置を設定 */
+.hamburger span:nth-child(1) {
+  top: 36px;
+}
+/* 2本目の線の位置を設定 */
+.hamburger span:nth-child(2) {
+  top: 50px;
+}
+/* 3本目の線の位置を設定 */
+.hamburger span:nth-child(3) {
+  top: 64px;
+}
+
+
+
+  
+       /* 1本目の線の位置を設定 */
+       .hamburger span .open:nth-child(1) {
+        top: 36px;
+        transform: rotateX('45deg');
+      }
+      /* 2本目の線の位置を設定 */
+      .hamburger span.open:nth-child(2) {
+        opacity: 0;
+      }
+      /* 3本目の線の位置を設定 */
+      .hamburger span.open:nth-child(3) {
+        top: 36px;
+        transform: rotateX('45deg');
+      }
+
+    .slide-menu{
+      background-color: rgba(0, 0, 0, .8);
+      position: fixed;
+      top: 65px;
+      width: 100%;
+      left: 0;
+    }
+    .slide-menu li{
+      color: #fff;
+      line-height: 400%;
+      text-align: center;
+    }
+
+ .slide-menu.open{
+  background-color: rgba(88, 41, 41, 0.8);
+  position: fixed;
+  top: 65px;
+  width: 100%;
+  left: 0;
+ }
