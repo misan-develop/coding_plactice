@@ -146,7 +146,7 @@ $(function () {
     console.log(1)
 
   // セレクタでスライダー化する要素を取得し、slick()メソッドを実行する
-  $(".slider").slick({
+  $(".slick2").slick({
     autoplay: true, // 自動でスライドを再生する
     autoplaySpeed: 2000, // 自動再生の速度(ﾐﾘ秒)
     arrows: true, // 前後の矢印を有効にする
@@ -169,4 +169,16 @@ $(function () {
       }
     ]
 
+  });
+
+  $(function () {
+    $('#js-slider-3').slick({
+      arrows: true, // 前・次のボタンを表示する
+      dots: true, // ドットナビゲーションを表示する
+      appendDots: $('.dots-3'), // ドットナビゲーションの生成位置を変更
+      speed: 1000, // スライドさせるスピード（ミリ秒）
+      slidesToShow: 1, // 表示させるスライド数
+      centerMode: true, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+      variableWidth: true, // スライド幅の自動計算を無効化
+    });
   });

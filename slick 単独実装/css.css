@@ -5,133 +5,93 @@
 }
 * {
   box-sizing: border-box;
+  
 }
 
-
-.slider {
-  margin: 0 auto;
-  max-width: 500px;
-  width: 80%;
+.slider-3 .slick-slide {
+  margin: 0 60px;
+  padding: 60px 0;
+  position: relative;
 }
-.slider-img {
-  margin: 0 10px;
+.slider-3 .slick-slide .slide-img {
+  width: 600px;
+  height: 400px;
+  transition: all 0.6s ease 0.4s;
+  opacity: 0.8;
+  box-shadow: 7px 7px 15px -5px #666;
+  overflow: hidden;
 }
-.slider-img img {
-  height: auto;
+.slider-3 .slick-slide.slick-current .slide-img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+.slider-3 .slick-slide .slide-img img {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-
-
-/* スライドを入れる箱 */
-.slider-wrapper {
-  width: 700px;
-  max-height: 350px;
-
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 20px 50px;
-}
-.slider-item {
-  margin: 0 20px; /* スライドの間隔をあける */
-}
-.slider-item img {
-  max-width: 100%; /* スライドに入れる画像の幅をコンテナいっぱいとする */
-}
-.slick-slide{
-  height: auto;
-}
-/* 前へ・次への矢印のスタイル */
-.slide-arrow {
-  width: 15px;
-  height: 15px;
-  transition: transform 0.3s;
-  position: absolute;
-  top: 25%;
+.slider-3 .slick-arrow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
   cursor: pointer;
-}
-.slide-prev {
-  border-top: 2px solid #333;
-  border-left: 2px solid #333;
-  transform: rotate(-45deg);
-  left: -25px;
-}
-.slide-prev:hover {
-  transform: translateX(-3px) rotate(-45deg);
-}
-.slide-next {
-  border-top: 2px solid #333;
-  border-right: 2px solid #333;
-  transform: rotate(45deg);
-  right: -25px;
-}
-.slide-next:hover {
-  transform: translateX(3px) rotate(45deg);
-}
-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
   border: none;
-  background: transparent;
-  padding: 0;
-}
-
-/* ドットのスタイル */
-.slide-dots {
-  width: 100%;
-  padding-top: 10px;
-  text-align: center;
-  list-style: none;
-}
-.slide-dots li {
-  display: inline-block;
-  margin: 0 10px;
-  text-align: center;
-  
-}
-.slide-dots li button {
-  border: 0;
-  background: 0;
+  outline: none;
   font-size: 0;
-  color: transparent;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+}
+.slider-3 .slick-arrow::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #09000d;
+  border-width: 3px 3px 0 0;
+  position: absolute;
+  top: 24px;
+  transform: rotate(45deg);
+}
+.slider-3 .slick-next {
+  right: 0;
+}
+.slider-3 .slick-prev {
+  left: 0;
+}
+.slider-3 .slick-next::before {
+  left: 20px;
+}
+.slider-3 .slick-prev::before {
+  border-width: 0 0 3px 3px;
+  right: 22px;
+}
+.dots-3 .slick-dots {
+  text-align: center;
+}
+.dots-3 .slick-dots li {
+  display: inline-block;
+}
+.dots-3 .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 6px;
+  font-size: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
   cursor: pointer;
-  
+  background: #bcbcbc;
+  border-radius: 50%;
 }
-.slide-dots li button::before {
-  content: "☆";
-  font-size: 16px;
-  color: black;}
-  
-.slide-dots li.slick-active button::before {
-  content: "★";
+.dots-3 .slick-dots .slick-active button {
+  background: #0a467d;
 }
-
-/* 画面幅400px以下のスタイル */
-@media screen and (max-width: 400px) {
-  .slider-wrapper {
-    margin: 0;
-    padding: 10px;
-  }
-  .slider-item {
-    margin: 0 10px;
-  }
-}
-
-/* その他スタイル */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .header {
   padding: 20px 0;
 }
